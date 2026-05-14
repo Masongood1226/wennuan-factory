@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Wennuan Factory 路 Premium Hijab Collection 2026</title>
+<meta name="description" content="Premium Muslim hijab manufacturer from China. OEM/ODM Modal Hijab, Custom Print Hijab, Winter Viscose Scarf. OEKO-TEX & BSCI certified." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --beige-50:#FBF7F1;
+    --beige-100:#F4ECE0;
+    --beige-200:#E8DCC8;
+    --beige-300:#D4C2A4;
+    --ink:#2A2520;
+    --ink-soft:#5C5448;
+    --gold:#B89968;
+    --gold-deep:#8E7547;
+    --line:#E0D5C2;
+    --white:#FFFDF9;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter',-apple-system,sans-serif;
+    background:var(--beige-50);
+    color:var(--ink);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{font-family:'Cormorant Garamond',serif;font-weight:500;letter-spacing:.5px;color:var(--ink)}
+
+  /* ---------- NAV ---------- */
+  .nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(251,247,241,.92);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+    padding:18px 6%;
+    display:flex;justify-content:space-between;align-items:center;
+  }
+  .logo{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;letter-spacing:2px;color:var(--ink)}
+  .logo span{color:var(--gold);font-style:italic}
+  .nav-links{display:flex;gap:36px;list-style:none}
+  .nav-links a{color:var(--ink-soft);text-decoration:none;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;transition:color .3s}
+  .nav-links a:hover{color:var(--gold)}
+  @media (max-width:720px){.nav-links{display:none}}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    min-height:78vh;
+    display:flex;align-items:center;justify-content:center;
+    text-align:center;
+    padding:80px 6%;
+    background:
+      linear-gradient(rgba(251,247,241,.65),rgba(251,247,241,.85)),
+      radial-gradient(circle at 30% 30%, var(--beige-200), var(--beige-50) 60%);
+    position:relative;
+  }
+  .hero::before{
+    content:"";position:absolute;top:30px;left:50%;transform:translateX(-50%);
+    width:60px;height:1px;background:var(--gold);
+  }
+  .hero-eyebrow{font-size:12px;letter-spacing:4px;color:var(--gold-deep);text-transform:uppercase;margin-bottom:24px}
+  .hero h1{font-size:clamp(40px,6vw,72px);line-height:1.1;margin-bottom:24px;font-weight:500}
+  .hero h1 em{color:var(--gold-deep);font-style:italic}
+  .hero p{max-width:620px;margin:0 auto 36px;color:var(--ink-soft);font-size:16px}
+  .hero-meta{display:flex;justify-content:center;gap:48px;flex-wrap:wrap;margin-top:40px;padding-top:32px;border-top:1px solid var(--line);max-width:680px;margin-inline:auto}
+  .hero-meta div{text-align:center}
+  .hero-meta .num{font-family:'Cormorant Garamond',serif;font-size:32px;color:var(--gold-deep);font-weight:600}
+  .hero-meta .lbl{font-size:11px;letter-spacing:2px;color:var(--ink-soft);text-transform:uppercase;margin-top:4px}
+
+  /* ---------- SECTION ---------- */
+  section{padding:90px 6%}
+  .section-head{text-align:center;margin-bottom:64px}
+  .section-head .eyebrow{font-size:11px;letter-spacing:3px;color:var(--gold-deep);text-transform:uppercase;margin-bottom:16px}
+  .section-head h2{font-size:clamp(32px,4vw,48px);margin-bottom:16px}
+  .section-head .divider{width:40px;height:1px;background:var(--gold);margin:20px auto}
+  .section-head p{max-width:560px;margin:0 auto;color:var(--ink-soft);font-size:15px}
+
+  /* ---------- PRODUCT CARDS ---------- */
+  .products{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr;gap:80px}
+  .product{
+    display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:center;
+  }
+  .product:nth-child(even){direction:rtl}
+  .product:nth-child(even)>*{direction:ltr}
+  @media (max-width:880px){
+    .product,.product:nth-child(even){grid-template-columns:1fr;direction:ltr;gap:32px}
+  }
+  .product-img{
+    position:relative;overflow:hidden;border-radius:4px;
+    box-shadow:0 30px 60px -25px rgba(142,117,71,.35);
+  }
+  .product-img img{width:100%;display:block;transition:transform 1.2s ease}
+  .product-img:hover img{transform:scale(1.04)}
+  .product-img .tag{
+    position:absolute;top:20px;left:20px;
+    background:var(--white);color:var(--gold-deep);
+    font-size:10px;letter-spacing:2px;text-transform:uppercase;
+    padding:8px 14px;border:1px solid var(--gold);
+  }
+  .product-info .pcode{font-size:11px;letter-spacing:3px;color:var(--gold-deep);text-transform:uppercase;margin-bottom:12px}
+  .product-info h3{font-size:36px;margin-bottom:8px;line-height:1.15}
+  .product-info .subtitle{font-style:italic;color:var(--ink-soft);margin-bottom:24px;font-size:15px}
+  .specs{
+    display:grid;grid-template-columns:1fr 1fr;gap:14px 24px;
+    padding:24px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:24px;
+  }
+  .specs div{font-size:13px}
+  .specs span{display:block;font-size:10px;letter-spacing:1.5px;color:var(--gold-deep);text-transform:uppercase;margin-bottom:4px}
+  .badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+  .badges b{
+    font-weight:400;font-size:11px;letter-spacing:1px;
+    padding:5px 12px;border:1px solid var(--beige-300);
+    color:var(--ink-soft);border-radius:20px;
+  }
+  .selling-pts{list-style:none;margin-bottom:28px}
+  .selling-pts li{position:relative;padding-left:22px;font-size:14px;color:var(--ink-soft);margin-bottom:8px}
+  .selling-pts li::before{content:"鉁?;position:absolute;left:0;color:var(--gold);font-size:12px;top:2px}
+
+  /* ---------- INQUIRY BUTTONS ---------- */
+  .inquiry{display:flex;gap:10px;flex-wrap:wrap}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:13px 22px;font-size:12px;letter-spacing:2px;text-transform:uppercase;
+    text-decoration:none;border-radius:2px;transition:all .3s;cursor:pointer;
+    font-family:'Inter',sans-serif;font-weight:500;border:none;
+  }
+  .btn-primary{background:var(--ink);color:var(--white)}
+  .btn-primary:hover{background:var(--gold-deep)}
+  .btn-line{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+  .btn-line:hover{background:var(--ink);color:var(--white)}
+  .btn-gold{background:var(--gold);color:var(--white)}
+  .btn-gold:hover{background:var(--gold-deep)}
+
+  /* ---------- ABOUT ---------- */
+  .about{
+    background:var(--beige-100);text-align:center;
+    padding:100px 6%;
+  }
+  .about-grid{
+    max-width:1100px;margin:60px auto 0;
+    display:grid;grid-template-columns:repeat(4,1fr);gap:32px;
+  }
+  @media (max-width:780px){.about-grid{grid-template-columns:repeat(2,1fr)}}
+  .about-grid .item{padding:32px 16px;background:var(--white);border:1px solid var(--line)}
+  .about-grid .item .icn{font-family:'Cormorant Garamond',serif;font-size:42px;color:var(--gold);margin-bottom:12px}
+  .about-grid .item h4{font-size:20px;margin-bottom:8px}
+  .about-grid .item p{font-size:13px;color:var(--ink-soft);line-height:1.5}
+
+  /* ---------- CTA ---------- */
+  .cta{
+    text-align:center;padding:120px 6%;
+    background:linear-gradient(135deg,var(--ink) 0%,#3a3328 100%);
+    color:var(--white);
+  }
+  .cta h2{color:var(--white);font-size:clamp(32px,4vw,52px);margin-bottom:20px}
+  .cta h2 em{color:var(--gold);font-style:italic}
+  .cta p{max-width:520px;margin:0 auto 40px;color:#D4C2A4;font-size:15px}
+  .cta .inquiry{justify-content:center}
+  .cta .btn-primary{background:var(--gold);color:var(--ink)}
+  .cta .btn-primary:hover{background:var(--white)}
+  .cta .btn-line{color:var(--white);border-color:var(--gold)}
+  .cta .btn-line:hover{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:#1F1B17;color:#8a8174;padding:50px 6% 30px;text-align:center;font-size:13px}
+  footer .ftop{display:flex;justify-content:center;gap:40px;flex-wrap:wrap;margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid #3a3328}
+  footer .ftop a{color:#D4C2A4;text-decoration:none;letter-spacing:1px}
+  footer .ftop a:hover{color:var(--gold)}
+  footer small{display:block;margin-top:10px;color:#5C5448}
+</style>
+</head>
+<body>
+
+<!-- ========== NAV ========== -->
+<nav class="nav">
+  <div class="logo">WENNUAN <span>Hijab</span></div>
+  <ul class="nav-links">
+    <li><a href="#collection">Collection</a></li>
+    <li><a href="#about">Factory</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ========== HERO ========== -->
+<header class="hero">
+  <div>
+    <div class="hero-eyebrow">Premium Hijab Manufacturer 路 Est. China</div>
+    <h1>Crafted for the<br/><em>Modern Muslimah</em></h1>
+    <p>OEM & ODM partner for premium hijab brands worldwide. From luxe modal essentials to custom-printed signatures 鈥?produced in our certified facility with uncompromising quality.</p>
+    <a href="#collection" class="btn btn-line">Explore Collection 鈫?/a>
+    <div class="hero-meta">
+      <div><div class="num">15+</div><div class="lbl">Years Manufacturing</div></div>
+      <div><div class="num">40+</div><div class="lbl">Export Countries</div></div>
+      <div><div class="num">OEKO鈥慣EX</div><div class="lbl">Certified</div></div>
+      <div><div class="num">BSCI</div><div class="lbl">Audited</div></div>
+    </div>
+  </div>
+</header>
+
+<!-- ========== COLLECTION ========== -->
+<section id="collection">
+  <div class="section-head">
+    <div class="eyebrow">Spring / Summer 2026</div>
+    <h2>Signature Collection</h2>
+    <div class="divider"></div>
+    <p>Three hero pieces, each engineered for daily elegance and ready for your private鈥憀abel customization.</p>
+  </div>
+
+  <div class="products">
+
+    <!-- Product 1: Modal Hijab -->
+    <article class="product">
+      <div class="product-img">
+        <span class="tag">Best Seller</span>
+        <img src="https://sc02.alicdn.com/kf/Aee587b82eb864660a22efe5d187b3e768.png" alt="Premium Modal Hijab in champagne beige"/>
+      </div>
+      <div class="product-info">
+        <div class="pcode">WN-MH-001</div>
+        <h3>Premium Modal Hijab</h3>
+        <div class="subtitle">Whisper-soft modal in 36 timeless shades</div>
+        <div class="specs">
+          <div><span>Material</span>95% Modal 路 5% Spandex</div>
+          <div><span>Weight</span>120 GSM</div>
+          <div><span>Size</span>75 脳 185 cm</div>
+          <div><span>Process</span>Reactive Dyeing</div>
+          <div><span>MOQ</span>300 pcs / color</div>
+          <div><span>Lead Time</span>25鈥?0 days</div>
+        </div>
+        <div class="badges"><b>OEKO-TEX 100</b><b>Wrinkle-resistant</b><b>Breathable</b><b>36 Colors</b></div>
+        <ul class="selling-pts">
+          <li>Silky drape with structured edge 鈥?no slipping during wear</li>
+          <li>Color-fast through 50+ washes, tested for hot climates</li>
+          <li>Custom labeling, hangtags & poly-bag packaging available</li>
+        </ul>
+        <div class="inquiry">
+          <a class="btn btn-primary" href="https://wa.me/8613757592088?text=Hello,%20I'm%20interested%20in%20Modal%20Hijab%20WN-MH-001" target="_blank">WhatsApp</a>
+          <a class="btn btn-line" href="mailto:wennuan@wennuanfactory.com?subject=Inquiry:%20Modal%20Hijab%20WN-MH-001">Email</a>
+          <a class="btn btn-gold" href="https://wennuanfactory.en.alibaba.com" target="_blank">Alibaba</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Product 2: Custom Print Hijab -->
+    <article class="product">
+      <div class="product-img">
+        <span class="tag">Custom Design</span>
+        <img src="https://sc02.alicdn.com/kf/A1559ceb2d02e44a4a8037bb6ff1966bdM.png" alt="Custom Print Hijab with floral pattern"/>
+      </div>
+      <div class="product-info">
+        <div class="pcode">WN-CP-002</div>
+        <h3>Custom Print Hijab</h3>
+        <div class="subtitle">Your design, our digital-print precision</div>
+        <div class="specs">
+          <div><span>Material</span>Chiffon / Satin / Silk-touch</div>
+          <div><span>Weight</span>75鈥?5 GSM</div>
+          <div><span>Size</span>180 脳 75 cm (customizable)</div>
+          <div><span>Process</span>Digital Printing (16M colors)</div>
+          <div><span>MOQ</span>100 pcs / design</div>
+          <div><span>Lead Time</span>20鈥?5 days</div>
+        </div>
+        <div class="badges"><b>Free Design Support</b><b>Sample in 7 days</b><b>Eco Inks</b><b>Unlimited Colors</b></div>
+        <ul class="selling-pts">
+          <li>Photo-realistic prints, edge-to-edge sharpness</li>
+          <li>In-house design team 鈥?share inspiration, we deliver tech-pack</li>
+          <li>Hand-rolled or laser-cut hem options</li>
+        </ul>
+        <div class="inquiry">
+          <a class="btn btn-primary" href="https://wa.me/8613757592088?text=Hello,%20I'd%20like%20to%20customize%20WN-CP-002" target="_blank">WhatsApp</a>
+          <a class="btn btn-line" href="mailto:wennuan@wennuanfactory.com?subject=Inquiry:%20Custom%20Print%20WN-CP-002">Email</a>
+          <a class="btn btn-gold" href="https://wennuanfactory.en.alibaba.com" target="_blank">Alibaba</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Product 3: Winter Viscose Scarf -->
+    <article class="product">
+      <div class="product-img">
+        <span class="tag">Autumn / Winter</span>
+        <img src="https://sc02.alicdn.com/kf/A3e598dee6cd5483089fc5ee0b47cd073e.png" alt="Winter Viscose Scarf in camel beige"/>
+      </div>
+      <div class="product-info">
+        <div class="pcode">WN-WV-003</div>
+        <h3>Winter Viscose Scarf</h3>
+        <div class="subtitle">Warmth wrapped in heritage drape</div>
+        <div class="specs">
+          <div><span>Material</span>100% Viscose</div>
+          <div><span>Weight</span>180 GSM</div>
+          <div><span>Size</span>200 脳 80 cm</div>
+          <div><span>Process</span>Yarn-Dyed + Fringe Finish</div>
+          <div><span>MOQ</span>200 pcs / color</div>
+          <div><span>Lead Time</span>30鈥?5 days</div>
+        </div>
+        <div class="badges"><b>Heavyweight</b><b>Hand-tied Fringe</b><b>24 Colors</b><b>Gift-Box Ready</b></div>
+        <ul class="selling-pts">
+          <li>Plush hand-feel ideal for UK / Canada / Northern Europe winters</li>
+          <li>Pantone-matched colorways 鈥?meet your brand palette exactly</li>
+          <li>Optional luxury gift-box for retail-ready packaging</li>
+        </ul>
+        <div class="inquiry">
+          <a class="btn btn-primary" href="https://wa.me/8613757592088?text=Hello,%20I'm%20interested%20in%20Winter%20Scarf%20WN-WV-003" target="_blank">WhatsApp</a>
+          <a class="btn btn-line" href="mailto:wennuan@wennuanfactory.com?subject=Inquiry:%20Winter%20Scarf%20WN-WV-003">Email</a>
+          <a class="btn btn-gold" href="https://wennuanfactory.en.alibaba.com" target="_blank">Alibaba</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ========== ABOUT ========== -->
+<section id="about" class="about">
+  <div class="section-head">
+    <div class="eyebrow">Why Wennuan</div>
+    <h2>From Our Loom to Your Brand</h2>
+    <div class="divider"></div>
+    <p>Vertically-integrated production from yarn to finished garment, trusted by brands across 40+ countries.</p>
+  </div>
+  <div class="about-grid">
+    <div class="item"><div class="icn">鈿?/div><h4>Own Factory</h4><p>15,000 m虏 facility 路 280 skilled workers 路 4 production lines</p></div>
+    <div class="item"><div class="icn">鉁?/div><h4>Certified</h4><p>OEKO-TEX 100, BSCI audited, Sedex member</p></div>
+    <div class="item"><div class="icn">鈼?/div><h4>Customization</h4><p>OEM & ODM 路 in-house design 路 sampling within 7 days</p></div>
+    <div class="item"><div class="icn">鈼?/div><h4>Trade Assurance</h4><p>Alibaba protected payment 路 L/C 路 T/T 30/70 accepted</p></div>
+  </div>
+</section>
+
+<!-- ========== CTA ========== -->
+<section id="contact" class="cta">
+  <div class="eyebrow" style="font-size:11px;letter-spacing:4px;color:var(--gold);text-transform:uppercase;margin-bottom:18px">Let's Begin</div>
+  <h2>Request Your <em>Quotation</em></h2>
+  <p>Share your design, target quantity, and delivery market 鈥?we'll respond within 4 business hours with samples and FOB pricing.</p>
+  <div class="inquiry">
+    <a class="btn btn-primary" href="https://wa.me/8613757592088?text=Hello%20Wennuan,%20I'd%20like%20to%20request%20a%20quotation" target="_blank">WhatsApp Us</a>
+    <a class="btn btn-line" href="mailto:wennuan@wennuanfactory.com?subject=Quotation%20Request">Send Email</a>
+    <a class="btn btn-line" href="https://wennuanfactory.en.alibaba.com" target="_blank">Visit Alibaba Store</a>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer>
+  <div class="ftop">
+    <a href="https://wennuanfactory.com" target="_blank">wennuanfactory.com</a>
+    <a href="https://wennuanhijab.com" target="_blank">wennuanhijab.com</a>
+    <a href="mailto:wennuan@wennuanfactory.com">wennuan@wennuanfactory.com</a>
+    <a href="https://wa.me/8613757592088" target="_blank">WhatsApp</a>
+  </div>
+  <div>漏 2026 Wennuan Hijab Factory 路 Premium Hijab Manufacturer in China</div>
+  <small>Catalog SS-2026 路 All specifications subject to confirmation in formal quotation</small>
+</footer>
+
+</body>
+</html>
