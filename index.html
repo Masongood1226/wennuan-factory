@@ -119,7 +119,7 @@
   }
   .selling-pts{list-style:none;margin-bottom:28px}
   .selling-pts li{position:relative;padding-left:22px;font-size:14px;color:var(--ink-soft);margin-bottom:8px}
-  .selling-pts li::before{content:"�?;position:absolute;left:0;color:var(--gold);font-size:12px;top:2px}
+  .selling-pts li::before{content:"�?;position:absolute;left:0;color:var(--gold);font-size:12px;top:2px}
 
   /* ---------- INQUIRY BUTTONS ---------- */
   .inquiry{display:flex;gap:10px;flex-wrap:wrap}
@@ -135,6 +135,45 @@
   .btn-line:hover{background:var(--ink);color:var(--white)}
   .btn-gold{background:var(--gold);color:var(--white)}
   .btn-gold:hover{background:var(--gold-deep)}
+
+  /* ---------- MORE COLLECTION GRID ---------- */
+  .more-section{padding:60px 6% 90px;background:var(--white)}
+  .more-grid{
+    max-width:1280px;margin:0 auto;
+    display:grid;grid-template-columns:repeat(4,1fr);gap:28px;
+  }
+  @media (max-width:980px){.more-grid{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:520px){.more-grid{grid-template-columns:1fr}}
+  .mini-card{
+    background:var(--beige-50);border:1px solid var(--line);
+    overflow:hidden;transition:all .4s;display:flex;flex-direction:column;
+  }
+  .mini-card:hover{transform:translateY(-4px);box-shadow:0 20px 40px -20px rgba(142,117,71,.3)}
+  .mini-card .img-wrap{
+    aspect-ratio:1/1;background:var(--beige-100);
+    display:flex;align-items:center;justify-content:center;
+    overflow:hidden;position:relative;
+  }
+  .mini-card .img-wrap img{width:100%;height:100%;object-fit:cover}
+  .mini-card .img-wrap .placeholder{
+    font-family:'Cormorant Garamond',serif;
+    color:var(--gold);font-size:14px;letter-spacing:3px;text-transform:uppercase;
+    text-align:center;padding:20px;
+  }
+  .mini-card .img-wrap .placeholder em{display:block;font-size:48px;font-style:normal;margin-bottom:8px;color:var(--beige-300)}
+  .mini-card .body{padding:20px;flex:1;display:flex;flex-direction:column}
+  .mini-card .cat{font-size:10px;letter-spacing:2px;color:var(--gold-deep);text-transform:uppercase;margin-bottom:6px}
+  .mini-card .body h4{font-size:18px;margin-bottom:6px;line-height:1.25;color:var(--ink)}
+  .mini-card .body .meta{font-size:12px;color:var(--ink-soft);margin-bottom:14px;flex:1}
+  .mini-card .body .price{font-family:'Cormorant Garamond',serif;color:var(--gold-deep);font-size:18px;margin-bottom:12px}
+  .mini-card .body a{
+    font-size:11px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;
+    color:var(--ink);border-bottom:1px solid var(--gold);padding-bottom:3px;align-self:flex-start;
+    transition:color .3s;
+  }
+  .mini-card .body a:hover{color:var(--gold-deep)}
+  .mini-card.coming{opacity:.65}
+  .mini-card.coming .body a{color:var(--ink-soft);border-color:var(--beige-300);pointer-events:none}
 
   /* ---------- ABOUT ---------- */
   .about{
@@ -191,8 +230,8 @@
   <div>
     <div class="hero-eyebrow">Premium Hijab Manufacturer · Est. China</div>
     <h1>Crafted for the<br/><em>Modern Muslimah</em></h1>
-    <p>OEM & ODM partner for premium hijab brands worldwide. From luxe modal essentials to custom-printed signatures �?produced in our certified facility with uncompromising quality.</p>
-    <a href="#collection" class="btn btn-line">Explore Collection �?/a>
+    <p>OEM & ODM partner for premium hijab brands worldwide. From luxe modal essentials to custom-printed signatures �?produced in our certified facility with uncompromising quality.</p>
+    <a href="#collection" class="btn btn-line">Explore Collection �?/a>
     <div class="hero-meta">
       <div><div class="num">15+</div><div class="lbl">Years Manufacturing</div></div>
       <div><div class="num">40+</div><div class="lbl">Export Countries</div></div>
@@ -229,11 +268,11 @@
           <div><span>Size</span>75 × 185 cm</div>
           <div><span>Process</span>Reactive Dyeing</div>
           <div><span>MOQ</span>300 pcs / color</div>
-          <div><span>Lead Time</span>25�?0 days</div>
+          <div><span>Lead Time</span>25�?0 days</div>
         </div>
         <div class="badges"><b>OEKO-TEX 100</b><b>Wrinkle-resistant</b><b>Breathable</b><b>36 Colors</b></div>
         <ul class="selling-pts">
-          <li>Silky drape with structured edge �?no slipping during wear</li>
+          <li>Silky drape with structured edge �?no slipping during wear</li>
           <li>Color-fast through 50+ washes, tested for hot climates</li>
           <li>Custom labeling, hangtags & poly-bag packaging available</li>
         </ul>
@@ -257,16 +296,16 @@
         <div class="subtitle">Your design, our digital-print precision</div>
         <div class="specs">
           <div><span>Material</span>Chiffon / Satin / Silk-touch</div>
-          <div><span>Weight</span>75�?5 GSM</div>
+          <div><span>Weight</span>75�?5 GSM</div>
           <div><span>Size</span>180 × 75 cm (customizable)</div>
           <div><span>Process</span>Digital Printing (16M colors)</div>
           <div><span>MOQ</span>100 pcs / design</div>
-          <div><span>Lead Time</span>20�?5 days</div>
+          <div><span>Lead Time</span>20�?5 days</div>
         </div>
         <div class="badges"><b>Free Design Support</b><b>Sample in 7 days</b><b>Eco Inks</b><b>Unlimited Colors</b></div>
         <ul class="selling-pts">
           <li>Photo-realistic prints, edge-to-edge sharpness</li>
-          <li>In-house design team �?share inspiration, we deliver tech-pack</li>
+          <li>In-house design team �?share inspiration, we deliver tech-pack</li>
           <li>Hand-rolled or laser-cut hem options</li>
         </ul>
         <div class="inquiry">
@@ -293,12 +332,12 @@
           <div><span>Size</span>200 × 80 cm</div>
           <div><span>Process</span>Yarn-Dyed + Fringe Finish</div>
           <div><span>MOQ</span>200 pcs / color</div>
-          <div><span>Lead Time</span>30�?5 days</div>
+          <div><span>Lead Time</span>30�?5 days</div>
         </div>
         <div class="badges"><b>Heavyweight</b><b>Hand-tied Fringe</b><b>24 Colors</b><b>Gift-Box Ready</b></div>
         <ul class="selling-pts">
           <li>Plush hand-feel ideal for UK / Canada / Northern Europe winters</li>
-          <li>Pantone-matched colorways �?meet your brand palette exactly</li>
+          <li>Pantone-matched colorways �?meet your brand palette exactly</li>
           <li>Optional luxury gift-box for retail-ready packaging</li>
         </ul>
         <div class="inquiry">
@@ -306,6 +345,96 @@
           <a class="btn btn-line" href="mailto:wennuan@wennuanfactory.com?subject=Inquiry:%20Winter%20Scarf%20WN-WV-003">Email</a>
           <a class="btn btn-gold" href="https://wennuanfactory.en.alibaba.com" target="_blank">Alibaba</a>
         </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ========== MORE COLLECTION ========== -->
+<section class="more-section">
+  <div class="section-head">
+    <div class="eyebrow">Extended Range</div>
+    <h2>More From Our Catalog</h2>
+    <div class="divider"></div>
+    <p>Explore our full range of hijabs and scarves — chiffon, jersey, satin and more. New styles added regularly.</p>
+  </div>
+  <div class="more-grid">
+
+    <article class="mini-card coming">
+      <div class="img-wrap"><div class="placeholder"><em>✦</em>Chiffon Hijab</div></div>
+      <div class="body">
+        <div class="cat">Chiffon</div>
+        <h4>Pearl Chiffon Hijab</h4>
+        <div class="meta">75 GSM · 180×75 cm · 24 colors</div>
+        <div class="price">From $1.80 / pc</div>
+        <a href="#contact">Coming Soon</a>
+      </div>
+    </article>
+
+    <article class="mini-card coming">
+      <div class="img-wrap"><div class="placeholder"><em>✦</em>Jersey Hijab</div></div>
+      <div class="body">
+        <div class="cat">Jersey</div>
+        <h4>Stretch Jersey Hijab</h4>
+        <div class="meta">200 GSM · 170×60 cm · 30 colors</div>
+        <div class="price">From $2.20 / pc</div>
+        <a href="#contact">Coming Soon</a>
+      </div>
+    </article>
+
+    <article class="mini-card coming">
+      <div class="img-wrap"><div class="placeholder"><em>✦</em>Satin Hijab</div></div>
+      <div class="body">
+        <div class="cat">Satin</div>
+        <h4>Luxury Satin Hijab</h4>
+        <div class="meta">90 GSM · 180×75 cm · 28 colors</div>
+        <div class="price">From $2.50 / pc</div>
+        <a href="#contact">Coming Soon</a>
+      </div>
+    </article>
+
+    <article class="mini-card coming">
+      <div class="img-wrap"><div class="placeholder"><em>✦</em>Crinkle Hijab</div></div>
+      <div class="body">
+        <div class="cat">Crinkle</div>
+        <h4>Crinkle Cotton Hijab</h4>
+        <div class="meta">110 GSM · 180×85 cm · 20 colors</div>
+        <div class="price">From $2.00 / pc</div>
+        <a href="#contact">Coming Soon</a>
+      </div>
+    </article>
+
+    <article class="mini-card coming">
+      <div class="img-wrap"><div class="placeholder"><em>✦</em>Instant Hijab</div></div>
+      <div class="body">
+        <div class="cat">Ready-to-Wear</div>
+        <h4>Instant Slip-On Hijab</h4>
+        <div class="meta">Jersey · One-size · 18 colors</div>
+        <div class="price">From $2.80 / pc</div>
+        <a href="#contact">Coming Soon</a>
+      </div>
+    </article>
+
+    <article class="mini-card coming">
+      <div class="img-wrap"><div class="placeholder"><em>✦</em>Underscarf</div></div>
+      <div class="body">
+        <div class="cat">Accessory</div>
+        <h4>Bonnet Underscarf</h4>
+        <div class="meta">Cotton-Spandex · One-size · 15 colors</div>
+        <div class="price">From $0.90 / pc</div>
+        <a href="#contact">Coming Soon</a>
+      </div>
+    </article>
+
+    <article class="mini-card coming">
+      <div class="img-wrap"><div class="placeholder"><em>✦</em>Prayer Hijab</div></div>
+      <div class="body">
+        <div class="cat">Prayer</div>
+        <h4>Two-Piece Prayer Hijab</h4>
+        <div class="meta">Polyester · One-size · Gift-box ready</div>
+        <div class="price">From $4.50 / set</div>
+        <a href="#contact">Coming Soon</a>
       </div>
     </article>
 
@@ -321,10 +450,10 @@
     <p>Vertically-integrated production from yarn to finished garment, trusted by brands across 40+ countries.</p>
   </div>
   <div class="about-grid">
-    <div class="item"><div class="icn">�?/div><h4>Own Factory</h4><p>15,000 m² facility · 280 skilled workers · 4 production lines</p></div>
-    <div class="item"><div class="icn">�?/div><h4>Certified</h4><p>OEKO-TEX 100, BSCI audited, Sedex member</p></div>
-    <div class="item"><div class="icn">�?/div><h4>Customization</h4><p>OEM & ODM · in-house design · sampling within 7 days</p></div>
-    <div class="item"><div class="icn">�?/div><h4>Trade Assurance</h4><p>Alibaba protected payment · L/C · T/T 30/70 accepted</p></div>
+    <div class="item"><div class="icn">�?/div><h4>Own Factory</h4><p>15,000 m² facility · 280 skilled workers · 4 production lines</p></div>
+    <div class="item"><div class="icn">�?/div><h4>Certified</h4><p>OEKO-TEX 100, BSCI audited, Sedex member</p></div>
+    <div class="item"><div class="icn">�?/div><h4>Customization</h4><p>OEM & ODM · in-house design · sampling within 7 days</p></div>
+    <div class="item"><div class="icn">�?/div><h4>Trade Assurance</h4><p>Alibaba protected payment · L/C · T/T 30/70 accepted</p></div>
   </div>
 </section>
 
@@ -332,7 +461,7 @@
 <section id="contact" class="cta">
   <div class="eyebrow" style="font-size:11px;letter-spacing:4px;color:var(--gold);text-transform:uppercase;margin-bottom:18px">Let's Begin</div>
   <h2>Request Your <em>Quotation</em></h2>
-  <p>Share your design, target quantity, and delivery market �?we'll respond within 4 business hours with samples and FOB pricing.</p>
+  <p>Share your design, target quantity, and delivery market �?we'll respond within 4 business hours with samples and FOB pricing.</p>
   <div class="inquiry">
     <a class="btn btn-primary" href="https://wa.me/8613757592088?text=Hello%20Wennuan,%20I'd%20like%20to%20request%20a%20quotation" target="_blank">WhatsApp Us</a>
     <a class="btn btn-line" href="mailto:wennuan@wennuanfactory.com?subject=Quotation%20Request">Send Email</a>
